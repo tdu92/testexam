@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3</title>
+</head>
+<body>
+<script>
+    function checkElementNumber(n) {
+        let check = true;
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                check = false;
+                break;
+            }
+        }
+        return check;
+    }
+    function sumOfListPrime(x) {
+        let sum=0;
+        for (let i = 0; i <= x; i++) {
+            if (checkElementNumber(i)) {
+                sum= sum + i;
+            }
+        }
+        return sum;
+    }
+    console.log(sumOfListPrime(7));
+</script>
+</body>
+</html>
