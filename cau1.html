@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body><script>
+    let array = [8,9,10];
+    function findAvg(array) {
+        let sum = 0;
+        let avg = 0;
+        for (let i = 0; i < array.length; i++) {
+            sum= sum + array[i];
+            avg =sum/(i+1);
+        }
+        return avg;
+    }
+    console.log(findAvg(array));
+</script>
+</body>
+</html>
