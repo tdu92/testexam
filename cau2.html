@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau2</title>
+</head>
+<body>
+
+<script>
+    let array = [8,9,10];
+    let x = 0;
+    let index = 0;
+
+    function insertNumberToArray(array,x,index) {
+        if (index < 0 || index > array.length) {
+            alert("Index out of length");
+            document.write(array);
+        } else {
+            for (let i = 0; i < array.length; i++) {
+                if (index === i) {
+                    array[index] = x;
+                }
+            }
+            return array;
+        }
+    }
+    insertNumberToArray(array,88,1);
+    console.log(insertNumberToArray(array,88,1));
+</script>
+
+</body>
+</html>
